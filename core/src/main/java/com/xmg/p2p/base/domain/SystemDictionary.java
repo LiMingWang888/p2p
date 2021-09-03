@@ -12,6 +12,6 @@ import lombok.Setter;
 @Setter
 public class SystemDictionary extends BaseDomain{
 
-    private String sn;
-    private String title;
+    private String sn;//分类编码
+    private String title;//分类名称
 }

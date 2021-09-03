@@ -13,7 +13,7 @@
 				if($("#showBindPhoneModal").size()>0){
 					//点击立刻绑定,弹出模式窗口
 					$("#showBindPhoneModal").click(function(){
-						$("#bindPhoneForm")[0].reset(); 
+						// $("#bindPhoneForm")[0].reset();
 						$("#bindPhoneModal").modal("show");
 					});
 					//给发送短信按钮添加时间
@@ -272,7 +272,7 @@
 		</#if>
 		
 		
-		<#if !userinfo.isBindEmail>
+		<#--<#if !userinfo.isBindEmail>
 		<div class="modal fade" id="bindEmailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
@@ -297,7 +297,7 @@
 		    </div>
 		  </div>
 		</div>
-		</#if>
+		</#if>-->
 		
 		
 		<#include "common/footer-tpl.ftl" />

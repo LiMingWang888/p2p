@@ -9,4 +9,5 @@ public interface SystemDictionaryItemMapper {
     SystemDictionaryItem selectByPrimaryKey(Long id);
 
     int updateByPrimaryKey(SystemDictionaryItem record);
+
 }

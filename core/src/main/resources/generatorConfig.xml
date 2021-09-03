@@ -63,22 +63,7 @@
 				value=""/> -->
 		</javaClientGenerator>
 	
-		<table tableName="systemDictionary" delimitIdentifiers="true">
-			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
-			<property name="constructorBased" value="false" />
-			<generatedKey column="id" sqlStatement="JDBC"/>
-		</table>
-		<table tableName="systemDictionaryItem" delimitIdentifiers="true">
-			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
-			<property name="constructorBased" value="false" />
-			<generatedKey column="id" sqlStatement="JDBC"/>
-		</table>
-		<table tableName="userinfo" delimitIdentifiers="true">
-			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
-			<property name="constructorBased" value="false" />
-			<generatedKey column="id" sqlStatement="JDBC"/>
-		</table>
-		<table tableName="account" delimitIdentifiers="true">
+		<table tableName="iplog" delimitIdentifiers="true">
 			<!-- 参考 javaModelGenerator 的 constructorBased属性 -->
 			<property name="constructorBased" value="false" />
 			<generatedKey column="id" sqlStatement="JDBC"/>

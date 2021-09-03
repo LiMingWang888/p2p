@@ -13,6 +13,10 @@
     <result column="score" property="score"/>
     <result column="realAuthId" property="realAuthId"/>
 
+      <!-- 属性类型是SystemDictionaryItem，有两种连接方式。
+           1. 使用内连接方式（left join）
+           2. 利用association单独发送一条额外的sql。
+           此处采用的是方法二。-->
     <association property="incomeGrade" javaType="com.xmg.p2p.base.domain.SystemDictionaryItem" column="incomeGrade_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
     <association property="marriage" javaType="com.xmg.p2p.base.domain.SystemDictionaryItem" column="marriage_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />
     <association property="kidCount" javaType="com.xmg.p2p.base.domain.SystemDictionaryItem" column="kidCount_id" select="com.xmg.p2p.base.mapper.SystemDictionaryItemMapper.selectByPrimaryKey" />

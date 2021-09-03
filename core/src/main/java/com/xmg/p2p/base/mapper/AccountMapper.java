@@ -4,7 +4,6 @@ import com.xmg.p2p.base.domain.Account;
 import java.util.List;
 
 public interface AccountMapper {
-    int deleteByPrimaryKey(Long id);
 
     int insert(Account record);
 

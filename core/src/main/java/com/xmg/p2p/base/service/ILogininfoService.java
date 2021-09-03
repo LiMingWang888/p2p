@@ -1,5 +1,7 @@
 package com.xmg.p2p.base.service;
 
+import com.xmg.p2p.base.domain.Logininfo;
+
 /**
  * 登录相关服务
  * @author wlm
@@ -16,5 +18,7 @@ public interface ILogininfoService {
 
     boolean checkUsername(String username, String password);
 
-    void login(String username, String password);
+    Logininfo login(String username, String password, String ip, int userType);
+
+    void initAdmin();
 }

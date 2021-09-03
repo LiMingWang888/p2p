@@ -25,4 +25,8 @@ public class Account extends BaseDomain{
     private BigDecimal borrowLimit = BidConst.INIT_BORROW_LIMIT;
 
     private String verifyCode;// 做数据校验的
+
+    public BigDecimal getTotalAmount(){
+        return usableAmount.add(this.freezedAmount).add(this.unReceivePrincipal);
+    }
 }
